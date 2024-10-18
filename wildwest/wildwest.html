@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <title>wild west</title>
+    <style>
+        .cowboy {
+            position: absolute;
+            bottom: 35px;
+            right: 55px; 
+            width: 200px;
+        }-->
+        .cowboy2 {
+            position:absolute;
+            bottom: 20px;
+            left:120px;
+            width:277px;
+        }
+
+        .cowboy3 {
+            position:absolute;
+            bottom: 35px;
+            right:10px;
+            width: 420px;
+        }
+
+        .cowboy4 {
+            position:absolute;
+            bottom: 0px;
+            left: 5px;
+            width:370px;
+        }
+
+        .cowboy5 {
+            position:absolute;
+            bottom:0px;
+            left: -10px;
+            width: 500px;
+        }
+
+    </style>
+</head>
+
+
+<title>wild west</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+<link rel="stylesheet" href="wildwest.css">
+<audio id="myAudio" src="/visual/cheering.mp3"></audio>
+<audio id="myAudio2" src="/visual/snake_sound.mp3"></audio>
+
+
+
+
+<body>
+    <main>
+        <h1 id="title">Wild West</h1>  
+        
+        <div id="gameboard">
+
+        </div>
+        <img src="rope-cartoon-clip-art-png-favpng-eRzXu0kds7DUUwRwhjm1qMa5Z-removebg-preview.png" alt = "ropecartoon" class="cowboy4">
+        <img src="haystack-removebg-preview.png" alt="haystack1" class="cowboy2">
+        <img src="wanted-removebg-preview.png" alt="wanted" class="cowboy3">
+        <img src="1000_F_204545176_5lKXkyCncoDkxRQVa8OIG7VoPuw4RlAM-removebg-preview.png" alt="cowboy1" class="cowboy5">
+        <a id="to-page" href="/visual/categories/categories.html">GO BACK</a>
+        
+        <script src="wildwest.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+        
+        <div id="customAlert" class="alert-modal" style="display: none;">
+            <div class="alert-content">
+              <h2>GIG EM</h2>
+              <p>YOU WONNNNNNN</p>
+              <img src="reveille.jpg" alt="GIG EM" width="300">
+              <button onclick="closeCustomAlert()">OK</button>
+            </div>
+          </div>
+
+        <div id="customAlert2" class="alert-modal" style="display: none;">
+            <div class="alert-content">
+                <h2>SSSSSSSSS</h2>
+                <p>YOU LOSTTTTTTT</p>
+                <img src="snake.jpg" alt="SSSSSSSSSSS" width="300">
+                <button onclick="closeCustomAlert2()">OK</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>  
+

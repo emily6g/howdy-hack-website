@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <title>A&M Unlimited</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="unlimited.css">
+    <audio id="myAudio" src="/visual/cheering.mp3"></audio>
+    <audio id="myAudio2" src="/visual/snake_sound.mp3"></audio>
+    <style>
+        #to-page {
+            margin-top: -100px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1 id="tamuTitle">A&M Unlimited</h1>
+        <div id="gameboard"></div>
+        <a id="to-page" href="/visual/categories/categories.html">GO BACK</a>
+        <script src="unlimited.js"></script>    
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    </main>
+    <div id="customAlert" class="alert-modal" style="display: none;">
+        <div class="alert-content">
+          <h2>GIG EM</h2>
+          <p>YOU WONNNNNNN</p>
+          <img src="reveille.jpg" alt="GIG EM" width="300">
+          <button onclick="closeCustomAlert()">OK</button>
+        </div>
+      </div>
+
+    <div id="customAlert2" class="alert-modal" style="display: none;">
+        <div class="alert-content">
+            <h2>SSSSSSSSS</h2>
+            <p>YOU LOSTTTTTTT</p>
+            <img src="snake.jpg" alt="SSSSSSSSSSS" width="300">
+            <button onclick="closeCustomAlert2()">OK</button>
+        </div>
+    </div>
+</body>
+</html>
+
